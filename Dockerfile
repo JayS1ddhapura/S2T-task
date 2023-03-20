@@ -1,4 +1,4 @@
-FROM node:14-alpine3.9
+FROM node:14-alpine as build
 
 ENV NODE_ENV production
 WORKDIR /usr/src/app
