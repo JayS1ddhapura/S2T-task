@@ -78,3 +78,22 @@ exports.searchOnVM = async (req, res) => {
         res.status(500).send({ status: 500, message: "Internal Server error", data: [] })
     }
 } 
+
+// 
+exports.getUserCard = async (req, res) => {
+    try{
+        const { body } = req;
+        const contact = body.contact;
+        if (!contact) {
+            return res.status(400).send({ status: 400, message: "Please provide a phone number.", data: [] })
+        }
+        const user = await UserModel.findOne({phoneNumber:contact})
+        if(!user) {
+            return res.status(404).send({ status: 404, message: "No user found with this phone number.", data: [] })
+        }
+        res.status(200).send({ status: 200, message: "Successfully fetched the user data", data: user })
+    } catch(e) {
+        console.log(e);
+        res.status(500).send({ status: 500, message: "Internal Server error", data: [] })
+    }
+}

@@ -9,6 +9,7 @@ This project takes a phone number as input and feeds the number to a lookup serv
 ### Prerequisites
 
 * Nodejs installed version > 14.0
+* Appium GUI installed
 
 ### Installing
 * open terminal and go to the project directory. 
