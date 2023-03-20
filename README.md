@@ -26,6 +26,20 @@ This project takes a phone number as input and feeds the number to a lookup serv
 | TWILIO_AUTHSID | ****** | Twilio authsid to work with Twilio Lookup |
 | TWILIO_AUTHTOKEN | ****** | Twilio auth token to work with Twilio Lookup |
   
+## Endpoints
+
+* /userInfo[POST] > Fetches information from twilio using Twilio Lookup API
+* /search[POST] > Searches for phone number in Whatsapp in a virtual machine
+* /userCard[GET] > Fetches user card from the database 
+
+## Sample Payload for the given endpoints
+```
+    py
+    {
+    "contact" : "+14372999897"
+    }
+```
+
 ## Description of Life cycle process
 
 * The project starts from the index.js file in which first it creates and hosts a server as well as establishes a connection with the database. 

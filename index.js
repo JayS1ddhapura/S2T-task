@@ -5,7 +5,7 @@ const UserRoute = require('./routes/UserRoutes')
 require('dotenv').config()
 require('./config/database')
 
-const { PORT } = process.env
+const { PORT } = process.env || 5000
 
 // initializing express
 const app = express({});

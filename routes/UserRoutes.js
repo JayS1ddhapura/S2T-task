@@ -7,6 +7,6 @@ const { getInfo, searchOnVM, getUserCard } = require('../controllers/UserControl
 // configuring routes
 Router.post('/userInfo', getInfo)
 Router.post('/search', searchOnVM)
-Router.post('/userCard', getUserCard)
+Router.get('/userCard', getUserCard)
 
 module.exports = Router
