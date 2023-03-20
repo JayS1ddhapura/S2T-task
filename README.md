@@ -33,8 +33,7 @@ This project takes a phone number as input and feeds the number to a lookup serv
 * /userCard[GET] > Fetches user card from the database 
 
 ## Sample Payload for the given endpoints
-```
-    py
+```json
     {
     "contact" : "+14372999897"
     }
