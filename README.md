@@ -17,6 +17,11 @@ This project takes a phone number as input and feeds the number to a lookup serv
 * run the command "npm install"
 * run the command "npm run dev" 
 
+### Creating Docker Image
+* open terminal and go to the project directory. 
+* run the command "docker build -t s2t_task ."
+* run the command "docker run -p 80:80 s2t_task" 
+
 ## Environment Variables
 
 | VARIABLE NAME | DEFAULT VALUE | DESCRIPTION |
